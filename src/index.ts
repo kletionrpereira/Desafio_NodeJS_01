@@ -14,7 +14,7 @@ dotenv.config();
  */
 
 if (!process.env.PORT) {
-	process.exit(1);
+  process.exit(1);
 }
 
 const PORT: number = parseInt(process.env.PORT as string, 10);
@@ -34,8 +34,12 @@ app.use(express.json());
  */
 
 app.listen(PORT, () => {
-	console.log(`Listening on port ${PORT}`);
-
+  console.log(`Executando na porta ${PORT}`);
   // Escreva aqui a sua msg para o mundo
-  
+  console.log("Hello World!");
+});
+
+// Hello Worlrd Printado na tela
+app.get("/", function (req, res) {
+  res.send("Hello World!");
 });
