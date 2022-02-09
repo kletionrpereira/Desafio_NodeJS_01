@@ -1,4 +1,4 @@
-/**
+/*
  * Required External Modules
  */
 
@@ -35,11 +35,7 @@ app.use(express.json());
 
 app.listen(PORT, () => {
   console.log(`Executando na porta ${PORT}`);
-  // Escreva aqui a sua msg para o mundo
-  console.log("Hello World!");
+  console.log('OLÁ MUNDO ');
 });
 
-// Hello Worlrd Printado na tela
-app.get("/", function (req, res) {
-  res.send("Hello World!");
-});
+
